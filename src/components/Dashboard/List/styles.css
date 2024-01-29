@@ -1,0 +1,138 @@
+.list-container{
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 1.2rem 1rem;
+    border-radius: 1.5rem;
+
+}
+
+.coin-logo{
+    width: 3rem;
+    height:3rem;
+}
+
+.symbol-name{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trending-up{
+  color: var(--green);
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  gap: 1.2rem; 
+  
+}
+
+.trending-red{
+    border: 2px solid var(--red);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.trending-down{
+    color: var(--red);
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    gap: 1.2rem; 
+}
+
+.trending-green{
+    border: 2px solid var(--green);
+    border-radius: 3rem;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.trending-icon-green{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.trending-icon-red{
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+.trending-green:hover,.trending-icon-green:hover{
+    background-color: var(--green);
+    /* color: var(--white); */
+    color: var(--grey);
+}
+
+.trending-red:hover,.trending-icon-red:hover{
+    background-color: var(--red);
+    /* color: var(--white); */
+    color: var(--grey);
+}
+
+.coin-info{
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.something-wrong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+    width: 100vw;
+    height: 100vh;
+    color: var(--grey);
+    background-color: var(--darkgrey);
+}
+.watchlist-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1.5rem;
+
+}
+
+@media only screen and (max-width: 900px) {
+    .market-cap{
+        display: none;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .total-volume,.market-cap{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .coin-trending{
+        display: none;
+    }
+}

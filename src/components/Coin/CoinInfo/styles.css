@@ -1,0 +1,14 @@
+.heading-name,.coin-description{
+    padding: 0.5rem;
+}
+
+
+.coin-description a{
+    color: var(--blue) !important;
+    text-decoration: underline !important;
+}
+
+.heading-name{
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}

@@ -1,0 +1,139 @@
+.grid-container{
+    width: 300px;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--darkgrey);
+    border-radius: 0.75rem;
+}
+.grid-container-green:hover{
+    border-color: var(--green);
+    transition: all 0.3s;
+}
+
+.grid-container-red:hover{
+    border-color: var(--red);
+    transition: all 0.3s;
+}
+.info-flex{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem;
+}
+
+.coin-logo{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.name-col{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+
+.coin-symbol{
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.coin-name{
+    color: var(--grey);
+    text-transform: capitalize;
+    font-weight: light;
+    font-size: 1rem;
+    margin: 0;;
+}
+
+.coin-info-flex{
+    display: flex;
+    gap: 1.5rem;
+    margin: 1rem 1.5rem;
+}
+
+.price-chip-green{
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--green);
+  border-radius: 3rem;
+  font-weight: 600;
+  color: var(--green);
+  text-align: center;
+
+}
+.price-chip-red{
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--red);
+  border-radius: 3rem;
+  font-weight: 600;
+  color: var(--red);
+  text-align: center;
+  min-width: 4rem;
+
+}
+
+.trending-icon-green{
+    border: 2px solid var(--green);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.trending-icon-red{
+    border: 2px solid var(--red);
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--red);
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.price-chip-green:hover,.trending-icon-green:hover{
+    background-color: var(--green);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.price-chip-red:hover,.trending-icon-red:hover{
+    background-color: var(--red);
+    color: var(--white);
+    transition: all 0.3s;
+}
+
+.info-container{
+    margin: 1.5rem 2rem;
+}
+
+.total_volume,.market_cap{
+    color: var(--grey);
+    font-size: 0.8rem;
+    font-family: 500;
+}
+
+
+.watchlist-div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   margin-left: auto;
+   margin-right: 1.3rem;
+}
+
+.watchlist-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+}

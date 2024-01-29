@@ -1,0 +1,19 @@
+.footer{
+    
+    width: 90vw;
+    background-color: var(--blue);
+    color:#fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0.6rem 2rem;
+    margin: 0.5rem 2rem;
+    border-radius: 0.6rem;
+}
+
+.social-icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 3rem;
+}
