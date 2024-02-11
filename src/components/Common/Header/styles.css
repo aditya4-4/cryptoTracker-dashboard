@@ -34,6 +34,6 @@
 }
 
 .link:hover{
-    color: var(--white);
+    color: var( --link-hover);
     transition: all 0.3s;
 }

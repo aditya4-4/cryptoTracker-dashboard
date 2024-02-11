@@ -1,6 +1,6 @@
 .list-container{
-    background-color: var(--darkgrey);
-    border: 2px solid var(--darkgrey);
+    background-color: var( --darkgrey-grey);
+    border: 2px solid var( --darkgrey-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -4,8 +4,8 @@
     align-items: center;
     gap: 1.5rem;
     padding: 1rem 3rem;
-    background-color: var(--darkgrey);
-    color: var(--grey);
+    background-color: var(--darkgrey-grey);
+    color: var(--input-text-color);
     width: 80%;
     margin: 1rem;
     margin-left: auto;
@@ -14,11 +14,11 @@
 }
 
 .search-flex input{
-    background-color: var(--darkgrey);
+    background-color: var(--darkgrey-grey);
     width: 100%;
     font-family: 'Inter';
     font-size: 1rem;
-    color: var(--grey);
+    color: var(--input-text-color);
     border: none;
 }
 

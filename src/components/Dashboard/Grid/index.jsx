@@ -1,12 +1,17 @@
 /* eslint-disable react/prop-types */
-
+import { useContext } from "react";
+import WatchlistContext from "../../../context/WatchlistContext";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
+import StarsRoundedIcon from "@mui/icons-material/StarsRounded";
 
 import "./styles.css";
 import { Link } from "react-router-dom";
 
 function Grid({ coin }) {
+
+  const {handleOnWatchlist} = useContext(WatchlistContext);
+
   return (
     <Link to={`/coin/${coin.id}`}>
       <div
@@ -21,6 +26,16 @@ function Grid({ coin }) {
           <div className="name-col">
             <p className="coin-symbol">{coin.symbol}</p>
             <p className="coin-name">{coin.name}</p>
+          </div>
+          <div className="watchlist">
+            <StarsRoundedIcon
+              fontSize="large"
+              sx={{ color: "red", fontSize: 35 }}
+              className="watchlist-icon"
+              onClick={(event) =>{
+                event.preventDefault()
+                handleOnWatchlist(coin.id)}}
+            />
           </div>
         </div>
 

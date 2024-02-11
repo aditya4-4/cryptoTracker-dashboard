@@ -1,22 +1,21 @@
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
-
+import { useContext } from "react";
 import TrendingUpRoundedIcon from "@mui/icons-material/TrendingUpRounded";
 import TrendingDownRoundedIcon from "@mui/icons-material/TrendingDownRounded";
 import Tooltip from "@mui/material/Tooltip";
 import "./styles.css";
+import StarsRoundedIcon from "@mui/icons-material/StarsRounded";
+import WatchlistContext from "../../../context/WatchlistContext";
 import { Link } from "react-router-dom";
+
 function List({ coin }) {
-  
-
-  
-
+  const { handleOnWatchlist } = useContext(WatchlistContext);
 
   return (
     <Link to={`/coin/${coin.id}`}>
       {coin != undefined && coin != null ? (
         <>
-        
           <div className="list-container">
             <Tooltip title="coin img" placement="bottom">
               <img src={coin.image} alt={coin.name} className="coin-logo" />
@@ -30,7 +29,6 @@ function List({ coin }) {
               <Tooltip title="coin name" placement="bottom">
                 <p className="coin-name">{coin.name}</p>
               </Tooltip>
-
             </div>
             <div className="coin-trending">
               {coin.price_change_percentage_24h > 0 ? (
@@ -51,7 +49,6 @@ function List({ coin }) {
             </div>
 
             <div className="coin-info">
-
               <Tooltip title="current price" placement="bottom">
                 <h4 className="current-price">
                   ${coin.current_price.toLocaleString()}
@@ -59,19 +56,30 @@ function List({ coin }) {
               </Tooltip>
 
               <Tooltip title="total volume" placement="bottom">
-                <p className="total-volume" >
+                <p className="total-volume">
                   ${coin.total_volume.toLocaleString()}
                 </p>
               </Tooltip>
 
               <Tooltip title="market cap" placement="bottom">
-                <p className="market-cap" >
+                <p className="market-cap">
                   ${coin.market_cap.toLocaleString()}
                 </p>
               </Tooltip>
-
+              <Tooltip  title="watchlist" placement="bottom">
+                <div className="watchlist" >
+                  <StarsRoundedIcon
+                    fontSize="large"
+                    sx={{ color: "red", fontSize: 35 }}
+                    className="watchlist-icon"
+                    onClick={(event) => {
+                      event.preventDefault();
+                      handleOnWatchlist(coin.id);
+                    }}
+                  />
+                </div>
+              </Tooltip>
             </div>
-         
           </div>
         </>
       ) : (

@@ -11,6 +11,10 @@
     --bg-color :#111;
     --text-color : #fff;
     --link-hover :#fff;
+    --btn-text-color : #fff;
+    --darkgrey-grey :#1b1b1b;
+    --input-text-color : #888;
+
 }
 
 html{
@@ -32,7 +36,11 @@ body{
   --text-color: var(--black) !important;
   --link-hover :#000;
   --darkgrey : #fff;
-  --white :#888 
+  --white :#888 ;
+  --link-hover : #000;
+  --btn-text-color : #000;
+  --darkgrey-grey :#ece6e6;
+  --input-text-color : #000;
 }
 
 .dark-mode {
@@ -128,7 +136,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--grey);
+    color: var(--white);
     font-size: 3rem;
     font-weight: 800;
     text-transform: capitalize;
