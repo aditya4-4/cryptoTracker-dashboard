@@ -84,30 +84,13 @@ body{
     display: none;
   }
 
-  /* media queries */
-
-  @media only screen and (max-width: 800px) {
-    .links {
-      display: none;
-    }
-    .mobile-drawer{
-      display: block;
-    }
-    .logo{
-      font-size: 1rem;
-    }
-    .link{
-      font-size: 0.8rem;
-    }
-  }
-
-
-  /*  */
+ 
 
   .drawer-link{
     width: 30vw;
     height: 100vh;
-    background-color: var(--black);
+    /* background-color: var(--black); */
+    background-color: var(--bg-color);
     padding: 1.6rem;
   }
 
@@ -152,3 +135,23 @@ body{
       gap: 2rem;
     }
     }
+
+     /* media queries */
+
+  @media only screen and (max-width: 800px) {
+    .links{
+      display: none !important;
+    }
+    .mobile-drawer{
+      display: block;
+    }
+    .logo{
+      font-size: 1rem;
+    }
+    .link{
+      font-size: 0.8rem;
+    }
+  }
+
+
+  /*  */
