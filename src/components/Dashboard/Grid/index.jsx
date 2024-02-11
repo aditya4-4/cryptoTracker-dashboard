@@ -30,7 +30,7 @@ function Grid({ coin }) {
           <div className="watchlist">
             <StarsRoundedIcon
               fontSize="large"
-              sx={{ color: "red", fontSize: 35 }}
+              sx={{ color: "#3a80e9", fontSize: 35 }}
               className="watchlist-icon"
               onClick={(event) =>{
                 event.preventDefault()
